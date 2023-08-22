@@ -1,0 +1,1 @@
+{"version":3,"file":"const.js","sourceRoot":"","sources":["../src/const.ts"],"names":[],"mappings":";;;AAEA,MAAM,YAAY,GAAG;IACnB,UAAU,EAAE,aAAa;IACzB,mBAAmB,EAAE,uBAAuB;IAC5C,iBAAiB,EAAE,qBAAqB;IACxC,YAAY,EAAE,kBAAkB;IAChC,gBAAgB,EAAE,wBAAwB;IAC1C,eAAe,EAAE,kBAAkB;CAC3B,CAAC;AATF,oCAAY;AAWrB,MAAM,MAAM,GAAG;IACb,SAAS,EAAE;;;;;;;;yBAQY;CACf,CAAC;AArBY,wBAAM"}

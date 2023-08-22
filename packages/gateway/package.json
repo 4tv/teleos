@@ -1,0 +1,47 @@
+{
+  "name": "@teleos/gateway",
+  "version": "1.0.0",
+  "description": "Server side tools for Teleos Digital Signage.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4tv/teleos.git"
+  },
+  "volta": {
+    "node": "18.17.0",
+    "yarn": "1.22.18"
+  },
+  "scripts": {
+    "clean": "rm -rf tsconfig.tsbuildinfo dist",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "lint": "eslint --ext js,ts",
+    "build": "tsc -b ."
+  },
+  "bugs": {
+    "url": "https://github.com/4tv/teleos/issues",
+    "mail": ""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Teleos LLC",
+    "url": "https://teleos.io"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.5",
+    "jest": "^29.6.1",
+    "typescript": "^5.1.6"
+  }
+}

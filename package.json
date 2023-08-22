@@ -1,0 +1,55 @@
+{
+  "name": "teleos",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/4tv/teleos.git"
+  },
+  "volta": {
+    "node": "18.17.0",
+    "yarn": "1.22.18"
+  },
+  "scripts": {
+    "test": "lerna run test --stream",
+    "test:watch": "lerna run test:watch",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "link": "lerna run link",
+    "publish": "lerna exec 'yarn publish'",
+    "lint": "lerna run lint",
+    "postinstall": "husky install"
+  },
+  "bugs": {
+    "url": "https://github.com/4tv/teleos/issues",
+    "mail": "help@teleos.io"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Teleos LLC",
+    "url": "https://teleos.io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/config-lerna-scopes": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "husky": "^8.0.3",
+    "lerna": "^7.1.4"
+  },
+  "packageManager": "yarn@1.22.17",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}

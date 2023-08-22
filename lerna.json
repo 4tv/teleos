@@ -1,0 +1,14 @@
+{
+  "npmClient": "yarn",
+  "version": "independent",
+  "nohoist": ["parcel-bundler"],
+  "command": {
+    "version": {
+      "changelogPreset": {
+        "name": "conventionalcommits",
+        "issueUrlFormat": "{{host}}/{{owner}}/{{repository}}/issues/{{id}}"
+      },
+      "conventionalCommits": true
+    }
+  }
+}
