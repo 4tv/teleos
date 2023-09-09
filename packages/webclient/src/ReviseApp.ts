@@ -38,7 +38,7 @@ class ReviseApp extends WebClient {
       }
     });
     return {
-      onReady: this.onReady,
+      onReady: this.onReady.bind(this),
     };
   };
 
@@ -49,7 +49,7 @@ class ReviseApp extends WebClient {
 
   /** @inheritdoc */
   public onReady(handler: ReviseEventHandlers['readyReceived']): this {
-    this.handlers.readyReceived = handler;
+    super.onReady(handler);
     return this;
   }
 

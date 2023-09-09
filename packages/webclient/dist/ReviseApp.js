@@ -28,7 +28,7 @@ class ReviseApp extends WebClient_1.WebClient {
                 }
             });
             return {
-                onReady: this.onReady,
+                onReady: this.onReady.bind(this),
             };
         };
     }
@@ -38,7 +38,7 @@ class ReviseApp extends WebClient_1.WebClient {
     }
     /** @inheritdoc */
     onReady(handler) {
-        this.handlers.readyReceived = handler;
+        super.onReady(handler);
         return this;
     }
     /**
