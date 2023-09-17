@@ -68,7 +68,7 @@ class WebClient {
      * This method is typically used to adjust the behavior
      * of the client app depending on the mode in which it is running.
      */
-    getMode() {
+    static getMode() {
         const urlParams = new URLSearchParams(window.location.search);
         switch (urlParams.get('mode')) {
             case 'revise':
@@ -128,11 +128,11 @@ class WebClient {
      * The loading animation will be shown on the host side
      * until this method is called.
      */
-    init(options, mode = this.getMode()) {
+    init(options, mode = WebClient.getMode()) {
         if (this.initialized) {
             throw new Error('App already initialized');
         }
-        if (this.getMode() !== mode) {
+        if (WebClient.getMode() !== mode) {
             throw new Error(`The class can only be used in ${mode} mode`);
         }
         this.sendReady(options);
