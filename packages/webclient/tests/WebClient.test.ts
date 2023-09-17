@@ -24,12 +24,9 @@ describe('WebClient tests', function () {
   });
 });
 
-it('should get mode properly', () => {
-  const publishApp = new TestWebClient({ appId: 'test', token: 'test' });
-
+it('should have get mode property', () => {
   ['publish', 'publish', undefined].forEach((mode) => {
     addSearchLocation(windowSpy, mode as 'publish');
-
-    expect(publishApp.getMode()).toBe(mode);
+    expect(TestWebClient.getMode()).toBe(mode);
   });
 });
