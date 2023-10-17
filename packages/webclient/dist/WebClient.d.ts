@@ -46,7 +46,7 @@ declare abstract class WebClient {
      * This method is typically used to adjust the behavior
      * of the client app depending on the mode in which it is running.
      */
-    getMode(): ClientMode | undefined;
+    static getMode(): ClientMode | undefined;
     /**
      * Method `complete` communicates to the host that the client interaction
      * has successfully completed.

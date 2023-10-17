@@ -114,7 +114,7 @@ type ReadyOptions = {
   /**
    * Set height implicitly, if not set gets from document.body.scrollHeight.
    */
-  height?: boolean;
+  height?: string;
 };
 
 interface PublishTicket {
